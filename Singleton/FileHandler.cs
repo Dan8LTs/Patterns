@@ -11,7 +11,7 @@ namespace Singleton
         /// <summary>
         /// The path to the file.
         /// </summary>
-        public string Path { get;  }
+        public string Path { get; }
         /// <summary>
         /// File contents.
         /// </summary>
