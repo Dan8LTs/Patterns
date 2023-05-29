@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Singleton
+﻿namespace Singleton
 {
-    internal sealed class FileHandlerSingleton
+    public sealed class FileHandlerSingleton
     {
         /// <summary>
         /// A private static class field that holds a single instance of the singleton class.
