@@ -4,21 +4,17 @@
     {
         public string Name { get; }
         public double Power { get; }
-        public decimal Price { get; }
         public double Weight { get; }
 
-        public Engine(string name, double power, decimal price, double weight)
+        public Engine(string name, double power, double weight)
         {
             Name = name;
             Power = power;
-            Price = price;
             Weight = weight;
         }
         public double GetConsumption(double speed)
         {
-            var currentSpeed = speed > 0 ? speed : 1;
-            var fuel = 0.0008 * currentSpeed * currentSpeed - 0.2 * currentSpeed + 17;
-            return fuel;
+            return (Power / 450) * ((speed - 40) * (speed - 40) + 8000);
         }
         public override string ToString()
         {

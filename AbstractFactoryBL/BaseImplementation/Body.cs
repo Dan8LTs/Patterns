@@ -4,15 +4,13 @@
     {
         public string Name { get; }
         public double AeroСoefficient { get; }
-        public decimal Price { get; }
         public double Durability { get; }
         public double Weight { get; }
 
-        public Body(string name, double aerocoefficient, decimal price, double durability, double weight)
+        public Body(string name, double aerocoefficient, double durability, double weight)
         {
             Name = name;
             AeroСoefficient = aerocoefficient;
-            Price = price;  
             Durability = durability;
             Weight = weight;
         }
